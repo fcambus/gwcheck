@@ -23,7 +23,8 @@ def main():
         for section in ELFFile(f).iter_sections():
             if section["sh_type"] == "SHT_PROGBITS":
                 if section.name.startswith(".gnu.warning"):
-                    print(section.data().decode("utf-8"))
+                    print(section.name + ":")
+                    print("\t" + section.data().decode("utf-8"))
 
 
 if __name__ == "__main__":
