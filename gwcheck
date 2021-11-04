@@ -24,7 +24,7 @@ def main():
             if section["sh_type"] == "SHT_PROGBITS":
                 if section.name.startswith(".gnu.warning"):
                     print(section.name + ":")
-                    print("\t" + section.data().decode("utf-8"))
+                    print("\t" + section.data().decode("utf-8").rstrip("\0"))
 
 
 if __name__ == "__main__":
