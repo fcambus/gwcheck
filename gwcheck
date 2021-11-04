@@ -16,15 +16,20 @@
 
 import sys
 from elftools.elf.elffile import ELFFile
+from elftools.common.exceptions import ELFError
 
 
 def main():
     with open(sys.argv[1], "rb") as f:
-        for section in ELFFile(f).iter_sections():
-            if section["sh_type"] == "SHT_PROGBITS":
-                if section.name.startswith(".gnu.warning"):
-                    print(section.name + ":")
-                    print("\t" + section.data().decode("utf-8").rstrip("\0"))
+        try:
+            for section in ELFFile(f).iter_sections():
+                if section["sh_type"] == "SHT_PROGBITS":
+                    if section.name.startswith(".gnu.warning"):
+                        print(section.name + ":")
+                        print("\t" + section.data().decode("utf-8").rstrip("\0"))
+        except ELFError as ex:
+            sys.stderr.write("Error: %s\n" % ex)
+            sys.exit(1)
 
 
 if __name__ == "__main__":
