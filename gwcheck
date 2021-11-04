@@ -14,12 +14,40 @@
 # SPDX-License-Identifier: BSD-2-Clause
 #
 
+import getopt
+import textwrap
 import sys
 from elftools.elf.elffile import ELFFile
 from elftools.common.exceptions import ELFError
 
 
+def usage():
+    usage = """\
+            gwcheck [-hv] input
+
+            The options are as follows:
+
+            	-h	Display usage.
+            	-v	Display version."""
+
+    print(textwrap.dedent(usage))
+
+
 def main():
+    try:
+        options, args = getopt.getopt(sys.argv[1:], "hv")
+    except getopt.GetoptError as err:
+        print(err)
+        sys.exit(1)
+
+    for option, arg in options:
+        if option == "-h":
+            usage()
+            sys.exit(0)
+        if option == "-v":
+            print("gwcheck 1.0.0")
+            sys.exit(0)
+
     with open(sys.argv[1], "rb") as input:
         try:
             for section in ELFFile(input).iter_sections():
