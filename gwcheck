@@ -20,9 +20,9 @@ from elftools.common.exceptions import ELFError
 
 
 def main():
-    with open(sys.argv[1], "rb") as f:
+    with open(sys.argv[1], "rb") as input:
         try:
-            for section in ELFFile(f).iter_sections():
+            for section in ELFFile(input).iter_sections():
                 if section["sh_type"] == "SHT_PROGBITS":
                     if section.name.startswith(".gnu.warning"):
                         print(section.name + ":")
