@@ -13,6 +13,13 @@ gwcheck requires Python 3 and the following Python modules:
 
 ## Usage
 
+	gwcheck [-hv] input
+
+The options are as follows:
+
+	-h	Display usage.
+	-v	Display version.
+
 ## Example
 
 ## License
