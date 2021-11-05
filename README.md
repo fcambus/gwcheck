@@ -8,6 +8,10 @@ files and display their content.
 For an introduction to .gnu.warning.* sections, please refer to this
 [article][1].
 
+Support for emitting linker warnings when using a symbol for which a
+.gnu.warning.symbol section exists is implemented in GNU linkers (ld
+and gold), but currently not in LLD.
+
 C libraries using this mechanism:
 
 - FreeBSD libc
