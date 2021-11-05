@@ -23,7 +23,7 @@ from elftools.common.exceptions import ELFError
 
 def usage():
     usage = """\
-            gwcheck [-hv] input
+            gwcheck [-hv] object
 
             The options are as follows:
 
@@ -56,9 +56,9 @@ def main():
             print("gwcheck 1.0.0")
             sys.exit(0)
 
-    with open(input, "rb") as input:
+    with open(input, "rb") as object:
         try:
-            for section in ELFFile(input).iter_sections():
+            for section in ELFFile(object).iter_sections():
                 if section["sh_type"] == "SHT_PROGBITS":
                     if section.name.startswith(".gnu.warning"):
                         print(section.name + ":")

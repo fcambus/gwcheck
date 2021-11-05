@@ -31,7 +31,7 @@ gwcheck requires Python 3 and the following Python module:
 
 ## Usage
 
-	gwcheck [-hv] input
+	gwcheck [-hv] object
 
 The options are as follows:
 
