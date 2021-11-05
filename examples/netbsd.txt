@@ -1,0 +1,374 @@
+.gnu.warning.tmpnam:
+	warning: tmpnam() possibly used unsafely, use mkstemp() or mkdtemp()
+.gnu.warning.tempnam:
+	warning: tempnam() possibly used unsafely, use mkstemp() or mkdtemp()
+.gnu.warning.__nanf:
+	warning: <math.h> defines NAN incorrectly for your compiler.
+.gnu.warning.exect:
+	warning: exect() is obsolete, its functionality has moved to the kernel
+.gnu.warning.getwd:
+	warning: getwd() possibly used unsafely, consider using getcwd()
+.gnu.warning.setruid:
+	warning: this program uses setruid(), which is deprecated.
+.gnu.warning.setrgid:
+	warning: this program uses setrgid(), which is deprecated.
+.gnu.warning.quotactl:
+	warning: reference to compatibility quotactl(); include <sys/quota.h> for correct reference
+.gnu.warning.sigsuspend:
+	warning: reference to compatibility sigsuspend(); include <signal.h> for correct reference
+.gnu.warning.sigprocmask:
+	warning: reference to compatibility sigprocmask(); include <signal.h> for correct reference
+.gnu.warning.sigpending:
+	warning: reference to compatibility sigpending(); include <signal.h> for correct reference
+.gnu.warning.sigaction:
+	warning: reference to compatibility sigaction(); include <signal.h> for correct reference
+.gnu.warning.shmctl:
+	warning: reference to compatibility shmctl(); include <sys/shm.h> for correct reference
+.gnu.warning.msgctl:
+	warning: reference to compatibility msgctl(); include <sys/msg.h> for correct reference
+.gnu.warning.vfork:
+	warning: reference to compatibility vfork(); include <unistd.h> for correct reference
+.gnu.warning.ctime_r:
+	warning: reference to compatibility ctime_r(); include <time.h> for correct reference
+.gnu.warning.ctime_rz:
+	warning: reference to compatibility ctime_rz(); include <time.h> for correct reference
+.gnu.warning.gmtime_r:
+	warning: reference to compatibility gmtime_r(); include <time.h> for correct reference
+.gnu.warning.localtime_r:
+	warning: reference to compatibility localtime_r(); include <time.h> for correct reference
+.gnu.warning.localtime_rz:
+	warning: reference to compatibility localtime_rz(); include <time.h> for correct reference
+.gnu.warning.mktime_z:
+	warning: reference to compatibility mktime_z(); include <time.h> for correct reference
+.gnu.warning.offtime:
+	warning: reference to compatibility offtime(); include <time.h> for correct reference
+.gnu.warning.posix2time:
+	warning: reference to compatibility posix2time(); include <time.h> for correct reference
+.gnu.warning.posix2time_z:
+	warning: reference to compatibility posix2time_z(); include <time.h> for correct reference
+.gnu.warning.time2posix:
+	warning: reference to compatibility time2posix(); include <time.h> for correct reference
+.gnu.warning.timegm:
+	warning: reference to compatibility timegm(); include <time.h> for correct reference
+.gnu.warning.timelocal:
+	warning: reference to compatibility timelocal(); include <time.h> for correct reference
+.gnu.warning.timeoff:
+	warning: reference to compatibility timeoff(); include <time.h> for correct reference
+.gnu.warning.tzset:
+	warning: reference to compatibility tzset(); include <time.h> for correct reference
+.gnu.warning.tzsetwall:
+	warning: reference to compatibility tzsetwall(); include <time.h> for correct reference
+.gnu.warning.__msgctl13:
+	warning: reference to compatibility __msgctl13(); include <sys/msg.h> to generate correct reference
+.gnu.warning.__shmctl13:
+	warning: reference to compatibility __shmctl13(); include <sys/shm.h> to generate correct reference
+.gnu.warning.__semctl13:
+	warning: reference to compatibility __semctl13(); include <sys/sem.h> to generate correct reference
+.gnu.warning.__ntp_gettime30:
+	warning: reference to compatibility __ntp_gettime30(); include <sys/timex.h> for correct reference
+.gnu.warning.kevent:
+	warning: reference to compatibility kevent(); include <sys/event.h> to generate correct reference
+.gnu.warning.lfs_segwait:
+	warning: reference to compatibility lfs_segwait(); include <???.h> to generate correct reference
+.gnu.warning._lwp_park:
+	warning: reference to compatibility _lwp_park(); include <lwp.h> to generate correct reference
+.gnu.warning.mq_timedreceive:
+	warning: reference to compatibility mq_timedreceive(); include <mqueue.h> to generate correct reference
+.gnu.warning.mq_timedsend:
+	warning: reference to compatibility mq_timedsend(); include <mqueue.h> to generate correct reference
+.gnu.warning.mknod:
+	warning: reference to compatibility mknod(); include <sys/stat.h> to generate correct reference
+.gnu.warning.adjtime:
+	warning: reference to compatibility adjtime(); include <time.h> to generate correct reference
+.gnu.warning.aio_suspend:
+	warning: reference to compatibility aio_suspend(); include <aio.h> to generate correct reference
+.gnu.warning.nanosleep:
+	warning: reference to compatibility nanosleep(); include <time.h> to generate correct reference
+.gnu.warning.pollts:
+	warning: reference to compatibility pollts(); include <poll.h> to generate correct reference
+.gnu.warning.select:
+	warning: reference to compatibility select(); include <sys/select.h> to generate correct reference
+.gnu.warning.pselect:
+	warning: reference to compatibility pselect(); include <sys/select.h> to generate correct reference
+.gnu.warning.getitimer:
+	warning: reference to compatibility getitimer(); include <sys/time.h> to generate correct reference
+.gnu.warning.setitimer:
+	warning: reference to compatibility setitimer(); include <sys/time.h> to generate correct reference
+.gnu.warning.clock_gettime:
+	warning: reference to compatibility clock_gettime(); include <time.h> to generate correct reference
+.gnu.warning.clock_settime:
+	warning: reference to compatibility clock_settime(); include <time.h> to generate correct reference
+.gnu.warning.clock_getres:
+	warning: reference to compatibility clock_getres(); include <time.h> to generate correct reference
+.gnu.warning.timer_gettime:
+	warning: reference to compatibility timer_gettime(); include <time.h> to generate correct reference
+.gnu.warning.timer_settime:
+	warning: reference to compatibility timer_settime(); include <time.h> to generate correct reference
+.gnu.warning.settimeofday:
+	warning: reference to compatibility settimeofday(); include <time.h> to generate correct reference
+.gnu.warning.wait3:
+	warning: reference to compatibility wait3(); include <sys/wait.h> to generate correct reference
+.gnu.warning.wait4:
+	warning: reference to compatibility wait4(); include <sys/wait.h> to generate correct reference
+.gnu.warning.utimes:
+	warning: reference to compatibility utimes(); include <sys/time.h> to generate correct reference
+.gnu.warning.lutimes:
+	warning: reference to compatibility lutimes(); include <sys/time.h> to generate correct reference
+.gnu.warning.futimes:
+	warning: reference to compatibility futimes(); include <sys/time.h> to generate correct reference
+.gnu.warning.mount:
+	warning: reference to compatibility mount(); include <sys/mount.h> to generate correct reference
+.gnu.warning.fhstatvfs1:
+	warning: reference to compatibility fhstatvfs1(); include <sys/mount.h> to generate correct reference
+.gnu.warning.fhstatvfs:
+	warning: reference to compatibility fhstatvfs(); include <sys/mount.h> to generate correct reference
+.gnu.warning.fhstat:
+	warning: reference to compatibility __fhstat30(); include <sys/mount.h> to generate correct referencewarning: reference to compatibility ___lwp_park50(); include <lwp.h> to generate correct referencewarning: reference to compatibility fhstat(); include <sys/mount.h> to generate correct reference
+.gnu.warning.fhopen:
+	warning: reference to compatibility fhopen(); include <sys/mount.h> to generate correct reference
+.gnu.warning.getfh:
+	warning: reference to compatibility getfh(); include <sys/mount.h> to generate correct reference
+.gnu.warning.socket:
+	warning: reference to compatibility socket(); include <sys/socket.h> for correct reference
+.gnu.warning.sched_rr_get_interval:
+	warning: reference to compatibility sched_rr_get_interval(); include <sched.h> to generate correct reference
+.gnu.warning.ntp_gettime:
+	warning: reference to compatibility ntp_gettime(); include <sys/timex.h> for correct reference
+.gnu.warning.msync:
+	warning: reference to compatibility msync(); include <sys/mman.h> for correct reference
+.gnu.warning.getdirentries:
+	reference to compatibility-only getdirentries(); this will break; use getdents() or readdir() instead
+.gnu.warning.unsetenv:
+	warning: reference to compatibility unsetenv(); include <stdlib.h> for correct reference
+.gnu.warning.putenv:
+	warning: reference to compatibility putenv(); include <stdlib.h> for correct reference
+.gnu.warning.fsetpos:
+	warning: reference to compatibility fsetpos(); include <stdio.h> for correct reference
+.gnu.warning.fgetpos:
+	warning: reference to compatibility fgetpos(); include <stdio.h> for correct reference
+.gnu.warning.rpcb_rmtcall:
+	warning: reference to compatibility rpcb_rmtcall(); include <rpc/rpcb_clnt.h> to generate correct reference
+.gnu.warning.rpcb_gettime:
+	warning: reference to compatibility rpcb_gettime(); include <rpc/rpcb_clnt.h> to generate correct reference
+.gnu.warning.pmap_rmtcall:
+	warning: reference to compatibility pmap_rmtcall(); include <rpc/pmap_clnt.h> to generate correct reference
+.gnu.warning.alloca:
+	Warning: reference to the libc supplied alloca(3); this most likely will not work. Please use the compiler provided version of alloca(3), by supplying the appropriate compiler flags (e.g. not -std=c89).
+.gnu.warning.closelog_r:
+	warning: reference to compatibility closelog_r(); include <sys/syslog.h> for correct reference
+.gnu.warning.openlog_r:
+	warning: reference to compatibility openlog_r(); include <sys/syslog.h> for correct reference
+.gnu.warning.setlogmask_r:
+	warning: reference to compatibility setlogmask_r(); include <sys/syslog.h> for correct reference
+.gnu.warning.syslog_r:
+	warning: reference to compatibility syslog_r(); include <sys/syslog.h> for correct reference
+.gnu.warning.vsyslog_r:
+	warning: reference to compatibility vsyslog_r(); include <sys/syslog.h> for correct reference
+.gnu.warning.syslogp_r:
+	warning: reference to compatibility syslogp_r(); include <sys/syslog.h> for correct reference
+.gnu.warning.vsyslogp_r:
+	warning: reference to compatibility vsyslogp_r(); include <sys/syslog.h> for correct reference
+.gnu.warning.__unvis13:
+	warning: reference to compatibility __unvis13(); include <vis.h> for correct reference
+.gnu.warning.__fts_children50:
+	warning: reference to compatibility __fts_children50(); include <fts.h> for correct reference
+.gnu.warning.__fts_close50:
+	warning: reference to compatibility __fts_close50(); include <fts.h> for correct reference
+.gnu.warning.__fts_open50:
+	warning: reference to compatibility __fts_open50(); include <fts.h> for correct reference
+.gnu.warning.__fts_read50:
+	warning: reference to compatibility __fts_read50(); include <fts.h> for correct reference
+.gnu.warning.__fts_set50:
+	warning: reference to compatibility __fts_set50(); include <fts.h> for correct reference
+.gnu.warning.getutent:
+	warning: reference to compatibility getutent(); include <utmp.h> for correct reference
+.gnu.warning.__fts_children32:
+	warning: reference to compatibility __fts_children32(); include <fts.h> for correct reference
+.gnu.warning.__fts_close32:
+	warning: reference to compatibility __fts_close32(); include <fts.h> for correct reference
+.gnu.warning.__fts_open32:
+	warning: reference to compatibility __fts_open32(); include <fts.h> for correct reference
+.gnu.warning.__fts_read32:
+	warning: reference to compatibility __fts_read32(); include <fts.h> for correct reference
+.gnu.warning.__fts_set32:
+	warning: reference to compatibility __fts_set32(); include <fts.h> for correct reference
+.gnu.warning.getpwuid:
+	warning: reference to compatibility getpwuid(); include <pwd.h> to generate correct reference
+.gnu.warning.getpwnam:
+	warning: reference to compatibility getpwnam(); include <pwd.h> to generate correct reference
+.gnu.warning.getpwnam_r:
+	warning: reference to compatibility getpwnam_r(); include <pwd.h> to generate correct reference
+.gnu.warning.getpwuid_r:
+	warning: reference to compatibility getpwuid_r(); include <pwd.h> to generate correct reference
+.gnu.warning.getpwent:
+	warning: reference to compatibility getpwent(); include <pwd.h> to generate correct reference
+.gnu.warning.getpwent_r:
+	warning: reference to compatibility getpwent_r(); include <pwd.h> to generate correct reference
+.gnu.warning.pwcache_userdb:
+	warning: reference to compatibility pwcache_userdb(); include <pwd.h> to generate correct reference
+.gnu.warning.alphasort:
+	warning: reference to compatibility alphasort(); include <dirent.h> for correct reference
+.gnu.warning.devname:
+	warning: reference to compatibility devname(); include <stdlib.h> to generate correct reference
+.gnu.warning.utime:
+	warning: reference to compatibility utime(); include <utime.h> to generate correct reference
+.gnu.warning.time:
+	warning: reference to compatibility time(); include <time.h> for correct reference
+.gnu.warning.getutxent:
+	warning: reference to compatibility getutxent(); include <utmpx.h> for correct reference
+.gnu.warning.getutxid:
+	warning: reference to compatibility getutxid(); include <utmpx.h> for correct reference
+.gnu.warning.getutxline:
+	warning: reference to compatibility getutxline(); include <utmpx.h> for correct reference
+.gnu.warning.pututxline:
+	warning: reference to compatibility pututxline(); include <utmpx.h> for correct reference
+.gnu.warning.updwtmpx:
+	warning: reference to compatibility updwtmpx(); include <utmpx.h> for correct reference
+.gnu.warning.getlastlogx:
+	warning: reference to compatibility getlastlogx(); include <utmpx.h> for correct reference
+.gnu.warning.updlastlogx:
+	warning: reference to compatibility updlastlogx(); include <utmpx.h> for correct reference
+.gnu.warning.getutmp:
+	warning: reference to compatibility getutmp(); include <utmpx.h> for correct reference
+.gnu.warning.getutmpx:
+	warning: reference to compatibility getutmpx(); include <utmpx.h> for correct reference
+.gnu.warning.unvis:
+	warning: reference to compatibility unvis(); include <vis.h> for correct reference
+.gnu.warning.timezone:
+	warning: reference to compatibility timezone; include <time.h> to generate correct reference
+.gnu.warning.times:
+	warning: reference to compatibility times(); include <sys/times.h> for correct reference
+.gnu.warning.sigaddset:
+	warning: reference to compatibility sigaddset(); include <signal.h> for correct reference
+.gnu.warning.sigdelset:
+	warning: reference to compatibility sigdelset(); include <signal.h> for correct reference
+.gnu.warning.sigemptyset:
+	warning: reference to compatibility sigemptyset(); include <signal.h> for correct reference
+.gnu.warning.sigfillset:
+	warning: reference to compatibility sigfillset(); include <signal.h> for correct reference
+.gnu.warning.sigismember:
+	warning: reference to compatibility sigismember(); include <signal.h> for correct reference
+.gnu.warning.sys_signame:
+	warning: reference to compatibility sys_signame[]; include <signal.h> for correct reference
+.gnu.warning.scandir:
+	warning: reference to compatibility scandir(); include <dirent.h> for correct reference
+.gnu.warning.___readdir_unlocked30:
+	warning: reference to compatibility _readdir_unlocked(); include <dirent.h> for correct reference
+.gnu.warning.__glob13:
+	warning: reference to compatibility __glob13(); include <glob.h> for correct reference
+.gnu.warning.__globfree13:
+	warning: reference to compatibility __globfree13(); include <glob.h> for correct reference
+.gnu.warning.glob:
+	warning: reference to compatibility glob(); include <glob.h> for correct reference
+.gnu.warning.globfree:
+	warning: reference to compatibility globfree(); include <glob.h> for correct reference
+.gnu.warning.__fts_children31:
+	warning: reference to compatibility __fts_children31(); include <fts.h> for correct reference
+.gnu.warning.__fts_close31:
+	warning: reference to compatibility __fts_close31(); include <fts.h> for correct reference
+.gnu.warning.__fts_open31:
+	warning: reference to compatibility __fts_open31(); include <fts.h> for correct reference
+.gnu.warning.__fts_read31:
+	warning: reference to compatibility __fts_read31(); include <fts.h> for correct reference
+.gnu.warning.__fts_set31:
+	warning: reference to compatibility __fts_set31(); include <fts.h> for correct reference
+.gnu.warning.__fts_children30:
+	warning: reference to compatibility __fts_children30(); include <fts.h> for correct reference
+.gnu.warning.__fts_close30:
+	warning: reference to compatibility __fts_close30(); include <fts.h> for correct reference
+.gnu.warning.__fts_open30:
+	warning: reference to compatibility __fts_open30(); include <fts.h> for correct reference
+.gnu.warning.__fts_read30:
+	warning: reference to compatibility __fts_read30(); include <fts.h> for correct reference
+.gnu.warning.__fts_set30:
+	warning: reference to compatibility __fts_set30(); include <fts.h> for correct reference
+.gnu.warning.__fts_children13:
+	warning: reference to compatibility __fts_children13(); include <fts.h> for correct reference
+.gnu.warning.__fts_close13:
+	warning: reference to compatibility __fts_close13(); include <fts.h> for correct reference
+.gnu.warning.__fts_open13:
+	warning: reference to compatibility __fts_open13(); include <fts.h> for correct reference
+.gnu.warning.__fts_read13:
+	warning: reference to compatibility __fts_read13(); include <fts.h> for correct reference
+.gnu.warning.__fts_set13:
+	warning: reference to compatibility __fts_set13(); include <fts.h> for correct reference
+.gnu.warning.fts_children:
+	warning: reference to compatibility fts_children(); include <fts.h> for correct reference
+.gnu.warning.fts_close:
+	warning: reference to compatibility fts_close(); include <fts.h> for correct reference
+.gnu.warning.fts_open:
+	warning: reference to compatibility fts_open(); include <fts.h> for correct reference
+.gnu.warning.fts_read:
+	warning: reference to compatibility fts_read(); include <fts.h> for correct reference
+.gnu.warning.fts_set:
+	warning: reference to compatibility fts_set(); include <fts.h> for correct reference
+.gnu.warning.__setlocale_mb_len_max_32:
+	warning: reference to compatibility __setlocale_mb_len_max_32();include <locale.h> for correct reference
+.gnu.warning.setlocale:
+	warning: reference to compatibility setlocale();include <locale.h> for correct reference
+.gnu.warning.dbm_delete:
+	warning: reference to compatibility dbm_delete(); include <ndbm.h> for correct reference
+.gnu.warning.dbm_fetch:
+	warning: reference to compatibility dbm_fetch(); include <ndbm.h> for correct reference
+.gnu.warning.dbm_firstkey:
+	warning: reference to compatibility dbm_firstkey(); include <ndbm.h> for correct reference
+.gnu.warning.dbm_nextkey:
+	warning: reference to compatibility dbm_nextkey(); include <ndbm.h> for correct reference
+.gnu.warning.dbm_store:
+	warning: reference to compatibility dbm_store(); include <ndbm.h> for correct reference
+.gnu.warning.mktemp:
+	warning: mktemp() possibly used unsafely, use mkstemp() or mkdtemp()
+.gnu.warning.gets:
+	warning: this program uses gets(), which is unsafe.
+.gnu.warning.__stat30:
+	warning: reference to compatibility __stat30(); include <sys/stat.h> to generate correct reference
+.gnu.warning.__fstat30:
+	warning: reference to compatibility __fstat30(); include <sys/stat.h> to generate correct reference
+.gnu.warning.__lstat30:
+	warning: reference to compatibility __lstat30(); include <sys/stat.h> to generate correct reference
+.gnu.warning.__fhstat40:
+	warning: reference to compatibility __fhstat40(); include <sys/mount.h> to generate correct reference
+.gnu.warning.gettimeofday:
+	warning: reference to compatibility gettimeofday(); include <sys/time.h> to generate correct reference
+.gnu.warning.getrusage:
+	warning: reference to compatibility getrusage(); include <sys/resource.h> to generate correct reference
+.gnu.warning.statfs:
+	warning: reference to obsolete statfs(); use statvfs()
+.gnu.warning.fstatfs:
+	warning: reference to obsolete fstatfs(); use fstatvfs()
+.gnu.warning.fhstatfs:
+	warning: reference to obsolete fhstatfs(); use fhstatvfs()
+.gnu.warning.getfsstat:
+	warning: reference to obsolete getfsstat(); use getvfsstat()
+.gnu.warning.__stat13:
+	warning: reference to compatibility __stat13(); include <sys/stat.h> to generate correct reference
+.gnu.warning.__fstat13:
+	warning: reference to compatibility __fstat13(); include <sys/stat.h> to generate correct reference
+.gnu.warning.__lstat13:
+	warning: reference to compatibility __lstat13(); include <sys/stat.h> to generate correct reference
+.gnu.warning.stat:
+	warning: reference to compatibility stat(); include <sys/stat.h> to generate correct reference
+.gnu.warning.fstat:
+	warning: reference to compatibility fstat(); include <sys/stat.h> to generate correct reference
+.gnu.warning.lstat:
+	warning: reference to compatibility lstat(); include <sys/stat.h> to generate correct reference
+.gnu.warning.readdir:
+	warning: reference to compatibility readdir(); include <dirent.h> for correct reference
+.gnu.warning.readdir_r:
+	warning: reference to compatibility readdir_r(); include <dirent.h> for correct reference
+.gnu.warning.opendir:
+	warning: reference to compatibility opendir(); include <dirent.h> for correct reference
+.gnu.warning.__opendir2:
+	warning: reference to compatibility __opendir2(); include <dirent.h> for correct reference
+.gnu.warning.initstate:
+	warning: reference to compatibility initstate(); include <stdlib.h> for correct reference
+.gnu.warning.srandom:
+	warning: reference to compatibility srandom(); include <stdlib.h> for correct reference
+.gnu.warning.xdr_domainname:
+	warning: this program uses xdr_domainname(), which is deprecated and buggy.
+.gnu.warning.xdr_peername:
+	warning: this program uses xdr_peername(), which is deprecated and buggy.
+.gnu.warning.xdr_mapname:
+	warning: this program uses xdr_mapname(), which is deprecated and buggy.
+.gnu.warning.__findenv:
+	warning: __findenv is an internal obsolete function.

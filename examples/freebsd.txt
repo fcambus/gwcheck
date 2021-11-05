@@ -1,0 +1,8 @@
+.gnu.warning.f_prealloc:
+	warning: this program uses f_prealloc(), which is not recommended.
+.gnu.warning.mktemp:
+	warning: mktemp() possibly used unsafely; consider using mkstemp()
+.gnu.warning.tempnam:
+	warning: tempnam() possibly used unsafely; consider using mkstemp()
+.gnu.warning.tmpnam:
+	warning: tmpnam() possibly used unsafely; consider using mkstemp()

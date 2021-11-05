@@ -1,0 +1,8 @@
+.gnu.warning.tmpnam:
+	warning: tmpnam() possibly used unsafely; consider using mkstemp()
+.gnu.warning.tempnam:
+	warning: tempnam() possibly used unsafely; consider using mkstemp()
+.gnu.warning.gets:
+	warning: this program uses gets(), which is unsafe.
+.gnu.warning.mktemp:
+	warning: mktemp() possibly used unsafely; consider using mkstemp()
