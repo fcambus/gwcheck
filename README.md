@@ -5,6 +5,20 @@
 gwcheck is a tool to check .gnu.warning.* sections in ELF object
 files and display their content.
 
+For an introduction to .gnu.warning.* sections, please refer to this
+[article][1].
+
+C libraries using this mechanism:
+
+- FreeBSD libc
+- NetBSD libc
+- OpenBSD libc
+- DragonFlyBSD libc
+- GNU C Library (glibc)
+- Newlib C library
+- diet libc
+- uClibc
+
 ## Requirements
 
 gwcheck requires Python 3 and the following Python modules:
@@ -63,3 +77,5 @@ gwcheck is released under the BSD 2-Clause license. See `LICENSE` file for detai
 gwcheck is developed by Frederic Cambus.
 
 - Site: https://www.cambus.net
+
+[1]: https://ninjalj.blogspot.com/2011/11/your-own-linker-warnings-using-gnu.html
