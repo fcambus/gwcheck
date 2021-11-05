@@ -10,7 +10,7 @@ For an introduction to .gnu.warning.* sections, please refer to this
 
 Support for emitting linker warnings when using a symbol for which a
 .gnu.warning.symbol section exists is implemented in GNU linkers (ld
-and gold), but currently not in LLD.
+and gold), but currently not in LLVM's LLD linker.
 
 C libraries using this mechanism:
 
@@ -25,7 +25,7 @@ C libraries using this mechanism:
 
 ## Requirements
 
-gwcheck requires Python 3 and the following Python modules:
+gwcheck requires Python 3 and the following Python module:
 
 - pyelftools
 
