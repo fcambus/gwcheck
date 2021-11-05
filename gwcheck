@@ -34,6 +34,7 @@ def usage():
 
 
 def main():
+    # Verify that gwcheck receives at least one argument
     try:
         sys.argv[1]
     except IndexError:
@@ -42,6 +43,7 @@ def main():
     else:
         input = sys.argv[1]
 
+    # Process command line arguments
     try:
         options, args = getopt.getopt(sys.argv[1:], "hv")
     except getopt.GetoptError as err:
@@ -56,6 +58,7 @@ def main():
             print("gwcheck 1.0.0")
             sys.exit(0)
 
+    # Process ELF object
     with open(input, "rb") as object:
         try:
             for section in ELFFile(object).iter_sections():
