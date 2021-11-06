@@ -22,6 +22,10 @@
 is a tool to check .gnu.warning.* sections in ELF object files
 and display their content.
 .Pp
+Support for emitting linker warnings when using a symbol for which
+a .gnu.warning.symbol section exists is implemented in GNU linkers
+(ld and gold), but currently not in LLVM's LLD linker.
+.Pp
 The options are as follows:
 .Bl -tag -width 10n
 .It Fl h
