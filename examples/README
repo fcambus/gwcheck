@@ -4,3 +4,5 @@ The examples contained in this directory have been generated using:
 - FreeBSD 13.0
 - NetBSD 9.2
 - OpenBSD 7.0
+
+- glibc 2.34
