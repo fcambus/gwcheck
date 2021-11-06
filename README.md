@@ -2,8 +2,8 @@
 
 ## Description
 
-gwcheck is a tool to check .gnu.warning.* sections in ELF object
-files and display their content.
+gwcheck is a tool to check `.gnu.warning.*` sections in **ELF object
+files** and display their content.
 
 For an introduction to .gnu.warning.* sections, please refer to this
 [article][1].
@@ -72,9 +72,13 @@ Here is the output of running gwcheck on OpenBSD 7.0 libc:
 	.gnu.warning.tmpnam:
 		tmpnam() possibly used unsafely; consider using mkstemp()
 
+Check the `examples` directory for gwcheck output on several other C
+libraries.
+
 ## License
 
-gwcheck is released under the BSD 2-Clause license. See `LICENSE` file for details.
+gwcheck is released under the BSD 2-Clause license. See `LICENSE` file for
+details.
 
 ## Author
 
