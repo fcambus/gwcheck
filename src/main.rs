@@ -12,8 +12,6 @@
  * SPDX-License-Identifier: BSD-2-Clause
  */
 
-#![allow(unused_assignments, unused_variables)]
-
 use goblin::elf::Elf;
 use getopt::Opt;
 use std::fs;
