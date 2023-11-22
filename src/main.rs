@@ -1,3 +1,17 @@
+/*
+ * gwcheck
+ * Copyright (c) 2021-2023, Frederic Cambus
+ * https://github.com/fcambus/gwcheck
+ *
+ * Created: 2011-11-04
+ * Last Updated: 2023-11-23
+ *
+ * gwcheck is released under the BSD 2-Clause license.
+ * See LICENSE file for details.
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ */
+
 #![allow(unused_assignments, unused_variables)]
 
 use goblin::elf::Elf;
