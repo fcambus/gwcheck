@@ -25,9 +25,10 @@ C libraries using this mechanism:
 
 ## Requirements
 
-gwcheck requires Python 3 and the following Python module:
+gwcheck is written in Rust and uses the following crates:
 
-- pyelftools
+- [getopt][2] - A minimal, (essentially) POSIX-compliant option parser
+- [goblin][3] - An impish, cross-platform, ELF, Mach-o, and PE binary parsing and loading crate
 
 ## Usage
 
@@ -87,3 +88,5 @@ gwcheck is developed by Frederic Cambus.
 - Site: https://www.cambus.net
 
 [1]: https://ninjalj.blogspot.com/2011/11/your-own-linker-warnings-using-gnu.html
+[2]: https://crates.io/crates/getopt
+[3]: https://crates.io/crates/goblin
