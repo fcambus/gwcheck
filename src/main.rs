@@ -12,8 +12,8 @@
  * SPDX-License-Identifier: BSD-2-Clause
  */
 
-use goblin::elf::Elf;
 use getopt::Opt;
+use goblin::elf::Elf;
 use std::fs;
 use std::process;
 
