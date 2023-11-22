@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 getopt = "1.1.3"
+goblin = "0.7.1"
