@@ -1,6 +1,8 @@
 #![allow(unused_assignments, unused_variables)]
 
+use goblin::elf::Elf;
 use getopt::Opt;
+use std::fs;
 use std::process;
 
 fn usage() {
@@ -36,6 +38,29 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     if args.len() < 1 {
         usage();
+    }
+
+    let object = fs::read(&args[0])?;
+
+    let elf = match Elf::parse(&object) {
+        Ok(elf) => elf,
+        Err(err) => {
+            eprintln!("Error: {}", err);
+            process::exit(1);
+        }
+    };
+
+    for section in &elf.section_headers {
+        if let Some(Ok(name)) = elf.shdr_strtab.get(section.sh_name) {
+            if name.starts_with(".gnu.warning.") {
+                let offset = section.sh_offset as usize;
+                let size = section.sh_size as usize;
+
+                let data: Vec<u8> = object[offset..(offset + size)].to_vec();
+
+                println!("{}:\n\t{}", name, String::from_utf8_lossy(&data));
+            }
+        }
     }
 
     Ok(())
