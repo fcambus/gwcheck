@@ -70,7 +70,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
                 let data: Vec<u8> = object[offset..(offset + size)].to_vec();
 
-                println!("{}:\n\t{}", name, String::from_utf8_lossy(&data).trim_matches(char::from(0)));
+                println!(
+                    "{}:\n\t{}",
+                    name,
+                    String::from_utf8_lossy(&data).trim_matches(char::from(0))
+                );
             }
         }
     }
