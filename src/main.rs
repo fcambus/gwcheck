@@ -63,7 +63,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     for section in &elf.section_headers {
-        if let Some(Ok(name)) = elf.shdr_strtab.get(section.sh_name) {
+        if let Some(name) = elf.shdr_strtab.get_at(section.sh_name) {
             if name.starts_with(".gnu.warning.") {
                 let offset = section.sh_offset as usize;
                 let size = section.sh_size as usize;
