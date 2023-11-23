@@ -4,12 +4,12 @@
 	sigreturn is not implemented and will always fail
 .gnu.warning.siggetmask:
 	warning: `siggetmask' is obsolete; `sigprocmask' is best
+.gnu.warning.tempnam:
+	the use of `tempnam' is dangerous, better use `mkstemp'
 .gnu.warning.tmpnam:
 	the use of `tmpnam' is dangerous, better use `mkstemp'
 .gnu.warning.tmpnam_r:
 	the use of `tmpnam_r' is dangerous, better use `mkstemp'
-.gnu.warning.tempnam:
-	the use of `tempnam' is dangerous, better use `mkstemp'
 .gnu.warning.gets:
 	the `gets' function is dangerous and should not be used.
 .gnu.warning.pthread_attr_getstackaddr:
@@ -22,18 +22,18 @@
 	the 're_max_failures' variable is obsolete and will go away.
 .gnu.warning.getwd:
 	the `getwd' function is dangerous and should not be used.
-.gnu.warning.revoke:
-	revoke is not implemented and will always fail
-.gnu.warning.mktemp:
-	the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
-.gnu.warning.gtty:
-	gtty is not implemented and will always fail
-.gnu.warning.stty:
-	stty is not implemented and will always fail
 .gnu.warning.chflags:
 	chflags is not implemented and will always fail
 .gnu.warning.fchflags:
 	fchflags is not implemented and will always fail
+.gnu.warning.gtty:
+	gtty is not implemented and will always fail
+.gnu.warning.mktemp:
+	the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+.gnu.warning.revoke:
+	revoke is not implemented and will always fail
+.gnu.warning.stty:
+	stty is not implemented and will always fail
 .gnu.warning.__compat_bdflush:
 	__compat_bdflush is not implemented and will always fail
 .gnu.warning.__gets_chk:

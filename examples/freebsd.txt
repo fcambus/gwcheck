@@ -6,3 +6,5 @@
 	warning: tempnam() possibly used unsafely; consider using mkstemp()
 .gnu.warning.tmpnam:
 	warning: tmpnam() possibly used unsafely; consider using mkstemp()
+.gnu.warning.tzsetwall:
+	warning: tzsetwall() is deprecated, use tzset() instead.
